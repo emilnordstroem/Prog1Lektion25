@@ -1,5 +1,7 @@
-package Storage;
+package Opgave01.Storage;
 
+import Opgave01.Models.Character;
+import Opgave01.Models.House;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -20,7 +22,7 @@ public class HogwartsStorage {
         HttpClient client = HttpClient.newHttpClient();
         try {
             HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create("https://hp-api.onrender.com/api/characters"))
+                    .uri(URI.create("https://hp-api.onrender.com/api/characters/students"))
                     .build();
 
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
@@ -29,5 +31,23 @@ public class HogwartsStorage {
         } catch (Exception e) {
             System.out.println(e);
         }
+    }
+
+    public ArrayList<Character> getHouseGryffindor() {
+        return new ArrayList<Character>(characters
+                .stream()
+                .filter(c -> c.getHouse() == House.GRYFFINDOR)
+                .sorted()
+                .toList()
+        );
+    }
+
+    public ArrayList<Character> getHouseSlytherin() {
+        return new ArrayList<Character>(characters
+                .stream()
+                .filter(c -> c.getHouse() == House.SLYTHERIN)
+                .sorted()
+                .toList()
+        );
     }
 }

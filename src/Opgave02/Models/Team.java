@@ -12,4 +12,24 @@ public class Team {
         this.goalsFor = goalsFor;
         this.goalsAgainst = goalsAgainst;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getPoints() {
+        return points;
+    }
+
+    public int getGoalsFor() {
+        return goalsFor;
+    }
+
+    public int getGoalDifference() {
+        return goalsFor - goalsAgainst;
+    }
+
+    public int getGoalsAgainst() {
+        return goalsAgainst;
+    }
 }
