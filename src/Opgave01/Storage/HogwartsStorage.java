@@ -26,7 +26,6 @@ public class HogwartsStorage {
                     .build();
 
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-            System.out.println(response.body());
             characters = gson.fromJson(response.body(), new TypeToken<List<Character>>(){}.getType());
         } catch (Exception e) {
             System.out.println(e);
