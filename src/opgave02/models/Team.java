@@ -1,4 +1,4 @@
-package Opgave02.Models;
+package opgave02.models;
 
 public class Team {
     private String name;
