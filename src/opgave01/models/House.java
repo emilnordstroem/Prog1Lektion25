@@ -1,4 +1,4 @@
-package Opgave01.Models;
+package opgave01.models;
 
 import com.google.gson.annotations.SerializedName;
 

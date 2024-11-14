@@ -1,7 +1,7 @@
-package Opgave01;
+package opgave01;
 
-import Opgave01.Models.Character;
-import Opgave01.Storage.HogwartsStorage;
+import opgave01.models.Character;
+import opgave01.storage.HogwartsStorage;
 
 import java.util.ArrayList;
 

@@ -1,7 +1,7 @@
-package Opgave02;
+package opgave02;
 
-import Opgave02.Models.Team;
-import Opgave02.Storage.ChampionsLeagueStorage;
+import opgave02.models.Team;
+import opgave02.storage.ChampionsLeagueStorage;
 
 public class Opgave02Main {
     public static void main(String[] args) {

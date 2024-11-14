@@ -1,6 +1,6 @@
-package Opgave02.Storage;
+package opgave02.storage;
 
-import Opgave02.Models.Team;
+import opgave02.models.Team;
 
 public class ChampionsLeagueStorage {
     private Team[] groupA = {

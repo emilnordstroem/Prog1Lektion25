@@ -1,4 +1,4 @@
-package Opgave01.Models;
+package opgave01.models;
 
 public class Character implements Comparable<Character> {
     private String name;

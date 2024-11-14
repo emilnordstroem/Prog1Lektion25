@@ -1,7 +1,7 @@
-package Opgave01.Storage;
+package opgave01.storage;
 
-import Opgave01.Models.Character;
-import Opgave01.Models.House;
+import opgave01.models.Character;
+import opgave01.models.House;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
