@@ -14,4 +14,9 @@ public class Opgave04Main {
         ArrayList<Person> people2 = TestDataGenerator.generatePeople();
         System.out.println(people2);
     }
+
+    public ArrayList<Person> merge(ArrayList<Person> people1, ArrayList<Person> people2) {
+        return null;
+        //Implementer denne metode
+    }
 }
