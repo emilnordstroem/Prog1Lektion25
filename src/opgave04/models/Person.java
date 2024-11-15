@@ -19,7 +19,7 @@ public class Person implements Comparable<Person> {
 
     @Override
     public int compareTo(Person other) {
-        return 0;
+        return lastname.compareTo(other.getLastname());
     }
 
     @Override
